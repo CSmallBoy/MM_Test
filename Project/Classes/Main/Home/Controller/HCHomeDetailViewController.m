@@ -34,7 +34,7 @@
 @implementation HCHomeDetailViewController
 - (void)viewWillAppear:(BOOL)animated{
     //[self requestHomeDetail];
- 
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(requestHomeDetail) name:@"刷新数据" object:nil];
 }
 - (void)viewDidLoad
 {

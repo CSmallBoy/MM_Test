@@ -15,7 +15,11 @@
     if (!_FTImages)
     {
         _FTImages = [NSMutableArray array];
-        [_FTImages addObject:OrigIMG(@"Add-Images")];
+        //评论带图的操作
+        //[_FTImages addObject:OrigIMG(@"Add-Images")];
+        //评论不带图片的
+//        UIImage *image =[[UIImage alloc]init];
+//        [_FTImages addObject:image];
     }
     return _FTImages;
 }

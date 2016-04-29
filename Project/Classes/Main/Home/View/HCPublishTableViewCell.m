@@ -77,8 +77,8 @@
                 UIButton *deleteBtn = [UIButton buttonWithType:UIButtonTypeCustom];
                 deleteBtn.tag = i;
                 deleteBtn.frame = CGRectMake(WIDTH(button)-25, 0, 25, 22);
-                deleteBtn.backgroundColor = [UIColor greenColor];
-                [deleteBtn setImage:IMG(@"close") forState:UIControlStateNormal];
+                //deleteBtn.backgroundColor = [UIColor greenColor];
+                [deleteBtn setImage:IMG(@"close_image") forState:UIControlStateNormal];
                 [deleteBtn addTarget:self action:@selector(handleDeleteButton:) forControlEvents:UIControlEventTouchUpInside];
                 [button addSubview:deleteBtn];
             }

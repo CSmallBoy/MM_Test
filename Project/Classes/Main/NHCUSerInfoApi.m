@@ -24,6 +24,20 @@
     NSDictionary *head = @{@"UUID":dict[@"UserInf"][@"uuid"],
                            @"platForm":[readUserInfo GetPlatForm],
                            @"token":[HCAccountMgr manager].loginInfo.Token};
+    
+    if (IsEmpty(_myModel.nickName)) {
+        _myModel.nickName = @"";
+    }else if (IsEmpty(_myModel.adress)){
+        _myModel.adress = @"";
+    }else if (IsEmpty(_myModel.professional)){
+        _myModel.professional = @"";
+    }else if (IsEmpty(_myModel.company)){
+        _myModel.company = @"";
+    }else if (IsEmpty(_myModel.birday)){
+        _myModel.birday = @"";
+    }else if (IsEmpty(_myModel.userPhoto)){
+        _myModel.userPhoto = @"";
+    }
     NSDictionary *para = @{@"nickName":_myModel.nickName,
                            @"homeAddress":_myModel.adress,
                            @"career":_myModel.professional,

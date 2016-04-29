@@ -40,7 +40,11 @@
 @implementation HCHomePictureDetailViewController
 
 #pragma mark - life cycle
-
+- (void)viewWillAppear:(BOOL)animated{
+    //刷新数据单图
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(requestPictureDetail) name:@"刷新数据1" object:nil];
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(requestPictureDetail) name:@"刷新数据单图" object:nil];
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];

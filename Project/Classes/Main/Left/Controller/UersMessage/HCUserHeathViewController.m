@@ -54,15 +54,32 @@
     api.allergic = allergy;
     api.cureCondition = condition;
     api.cureNote = note;
-    [api startRequest:^(HCRequestStatus requestStatus, NSString *message, id responseObject) {
+    
+    if (IsEmpty(heigh)) {
+        return;
+    }else if (IsEmpty(weight)){
+        return;
+    }else if (IsEmpty(Blood)){
+        return;
+    }else if (IsEmpty(allergy)){
+        return;
+    }else if (IsEmpty(condition)){
+        return;
+    }else if (IsEmpty(note)){
+        return;
+    }else{
         
-    }];
-    for (UIViewController *temp in self.navigationController.viewControllers) {
-        if ([temp isKindOfClass:[HCUserMessageViewController class]]) {
-            
-            [self.navigationController popToViewController:temp animated:YES];
-        }
+        [api startRequest:^(HCRequestStatus requestStatus, NSString *message, id responseObject) {
+            for (UIViewController *temp in self.navigationController.viewControllers) {
+                if ([temp isKindOfClass:[HCUserMessageViewController class]]) {
+                    
+                    [self.navigationController popToViewController:temp animated:YES];
+                }
+            }
+        }];
+        
     }
+    
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -79,7 +96,9 @@
       UITextField *label2 = [[UITextField alloc]initWithFrame:CGRectMake(100, 5, 150, 40)];
     UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(10, 5, 80, 40)];
     label2.delegate = self;
-
+    UILabel *label_unit = [[UILabel alloc]initWithFrame:CGRectMake(150, 5, 60, 40)];
+    label_unit.font = [UIFont systemFontOfSize:14];
+    label_unit.textColor = [UIColor grayColor];
     if (cell==nil) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         
@@ -90,9 +109,33 @@
         }else{
             label2.text = _arr_heath[indexPath.row];
         }
-        
+        [cell addSubview:label_unit];
         [cell addSubview:label2];
         [cell addSubview:label];
+    }
+    switch (indexPath.row) {
+        case 0:
+        {
+            label2.frame = CGRectMake(100, 5, 50, 40);
+            label_unit.text = @"单位 cm";
+            
+        }
+            break;
+        case 1:
+        {
+            label2.frame = CGRectMake(100, 5, 50, 40);
+            label_unit.text = @"单位 kg";
+        }
+            break;
+        case 2:
+        {
+            label2.frame = CGRectMake(100, 5, 50, 40);
+            label_unit.text = @"血型";
+        }
+            break;
+            
+        default:
+            break;
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;

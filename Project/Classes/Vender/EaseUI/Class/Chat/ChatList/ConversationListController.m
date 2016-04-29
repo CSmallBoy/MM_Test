@@ -94,11 +94,9 @@
     if (_networkStateView == nil) {
         _networkStateView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 44)];
         _networkStateView.backgroundColor = [UIColor colorWithRed:255 / 255.0 green:199 / 255.0 blue:199 / 255.0 alpha:0.5];
-        
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, (_networkStateView.frame.size.height - 20) / 2, 20, 20)];
         imageView.image = [UIImage imageNamed:@"messageSendFail"];
         [_networkStateView addSubview:imageView];
-        
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(imageView.frame) + 5, 0, _networkStateView.frame.size.width - (CGRectGetMaxX(imageView.frame) + 15), _networkStateView.frame.size.height)];
         label.font = [UIFont systemFontOfSize:15.0];
         label.textColor = [UIColor grayColor];

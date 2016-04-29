@@ -140,6 +140,7 @@
                     case 3:{
                         cell.textField.text = _dict[@"UserInf"][@"birthDay"];
                         label_age.text = [readUserInfo ageWith:cell.textField.text];
+                        _birthday = cell.textField.text;
                     }
                         break;
                     default:
