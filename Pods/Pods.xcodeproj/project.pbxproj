@@ -1422,7 +1422,6 @@
 		C660E21C2EC3502B1B19177F4597B45F /* MLEmojiLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MLEmojiLabel-dummy.m"; sourceTree = "<group>"; };
 		C6A4767BAAFF589F883905AEDF063045 /* SDWebImageDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDecoder.m; path = SDWebImage/SDWebImageDecoder.m; sourceTree = "<group>"; };
 		C6F5C82228BB3FE691C41BECF774AF4C /* MJRefresh.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MJRefresh.xcconfig; sourceTree = "<group>"; };
-		C74890791CD35F3F00DD30BE /* Project.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Project.xcodeproj; path = ../Project.xcodeproj; sourceTree = "<group>"; };
 		C75EA134660C7179D44CE8074E97025A /* libTTTAttributedLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTTTAttributedLabel.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7BE876C69D70E6E03CD77E136EA4CE1 /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+AFNetworking.m"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
 		C821CCD7B578798BB64EEA2512219173 /* IQSegmentedNextPrevious.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQSegmentedNextPrevious.h; path = IQKeyBoardManager/IQSegmentedNextPrevious/IQSegmentedNextPrevious.h; sourceTree = "<group>"; };
@@ -2601,7 +2600,6 @@
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				C74890791CD35F3F00DD30BE /* Project.xcodeproj */,
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				24A86FE55145BF585FDB9D18A0A013B5 /* Frameworks */,
 				F957F3AE0EAC54571C634B9276EB4107 /* Pods */,
@@ -2989,11 +2987,6 @@
 				7062D5BD1F6C556D12A095C24A59A126 /* Support Files */,
 			);
 			path = MLEmojiLabel;
-			sourceTree = "<group>";
-		};
-		C748907A1CD35F3F00DD30BE /* Products */ = {
-			isa = PBXGroup;
-			name = Products;
 			sourceTree = "<group>";
 		};
 		DB12F564DB831107012523388C21E608 /* Resources */ = {
@@ -3901,12 +3894,6 @@
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
 			productRefGroup = AA41B7BED59F44957DC7E757851C3801 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = C748907A1CD35F3F00DD30BE /* Products */;
-					ProjectRef = C74890791CD35F3F00DD30BE /* Project.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				8966C42FBDF19BF9A30293D6BD0E1739 /* ACEExpandableTextCell */,
