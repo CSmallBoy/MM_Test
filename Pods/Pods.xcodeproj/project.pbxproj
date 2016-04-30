@@ -1247,6 +1247,8 @@
 		8CA7F62C6A14DABF65C06CD778834754 /* YTKBatchRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YTKBatchRequest.m; path = YTKNetwork/YTKBatchRequest.m; sourceTree = "<group>"; };
 		8D67930D4C7C756FFAC9E5CF9AE4CDDA /* PFConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFConfig.m; path = Parse/PFConfig.m; sourceTree = "<group>"; };
 		8D6B18C0338033F6EF6F1A1E07667E5D /* PFACL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFACL.m; path = Parse/PFACL.m; sourceTree = "<group>"; };
+		8D78617E1CD3663200ADCF6A /* Project.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Project.xcodeproj; path = ../Project.xcodeproj; sourceTree = "<group>"; };
+		8D7861811CD3663800ADCF6A /* Project.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Project.xcodeproj; path = ../Project.xcodeproj; sourceTree = "<group>"; };
 		8DF8EB3E9FE4C075BE95688E128FA95D /* EMVoiceMessageBody.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMVoiceMessageBody.h; path = EaseMobSDKFull/include/ChatService/EMChatManager/types/EMVoiceMessageBody.h; sourceTree = "<group>"; };
 		8E07026FF2DDABD46E643ECAD27130CE /* PFRESTUserCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFRESTUserCommand.h; path = Parse/Internal/Commands/PFRESTUserCommand.h; sourceTree = "<group>"; };
 		8E112A4C76171F13BE5762D10404BCB7 /* PFAnonymousUtils_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFAnonymousUtils_Private.h; path = Parse/Internal/User/AuthenticationProviders/Providers/Anonymous/PFAnonymousUtils_Private.h; sourceTree = "<group>"; };
@@ -2600,6 +2602,8 @@
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
+				8D7861811CD3663800ADCF6A /* Project.xcodeproj */,
+				8D78617E1CD3663200ADCF6A /* Project.xcodeproj */,
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				24A86FE55145BF585FDB9D18A0A013B5 /* Frameworks */,
 				F957F3AE0EAC54571C634B9276EB4107 /* Pods */,
@@ -2633,6 +2637,16 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/AFNetworking";
+			sourceTree = "<group>";
+		};
+		8D78617F1CD3663200ADCF6A /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D7861821CD3663800ADCF6A /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		8F8E3D5BC89170038A58183210DE9176 /* Support Files */ = {
@@ -3894,6 +3908,16 @@
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
 			productRefGroup = AA41B7BED59F44957DC7E757851C3801 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8D78617F1CD3663200ADCF6A /* Products */;
+					ProjectRef = 8D78617E1CD3663200ADCF6A /* Project.xcodeproj */;
+				},
+				{
+					ProductGroup = 8D7861821CD3663800ADCF6A /* Products */;
+					ProjectRef = 8D7861811CD3663800ADCF6A /* Project.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8966C42FBDF19BF9A30293D6BD0E1739 /* ACEExpandableTextCell */,
